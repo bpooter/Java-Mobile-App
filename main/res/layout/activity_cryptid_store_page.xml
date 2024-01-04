@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CryptidStorePage">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20sp">
+
+            <TextView
+                android:id="@+id/textViewCryptidInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cryptidInformation"
+                android:paddingTop="30sp"
+                android:paddingBottom="30sp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="25sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/selectionPrompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose from the buttons below to view more information about them"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <RadioGroup
+                android:id="@+id/buttonGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton android:id="@+id/bigfootRad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BigFoot"/>
+
+                <RadioButton android:id="@+id/mothmanRad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moth Man"/>
+
+                <RadioButton android:id="@+id/chupacabraRad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chupacabra"/>
+
+                <RadioButton android:id="@+id/lochNessMonsterRad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Loch Ness Monster"/>
+            </RadioGroup>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="30sp">
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="100sp"
+            android:maxWidth="100sp"
+            android:layout_height="55sp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/darkBlue"
+            android:text="View Info" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="30sp">
+
+            <Button
+                android:id="@+id/buttonReturn"
+                android:layout_width="150sp"
+                android:maxWidth="150sp"
+                android:layout_height="55sp"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/darkBlue"
+                android:text="Return to Home" />
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

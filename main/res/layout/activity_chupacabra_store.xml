@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    tools:context=".ChupacabraStore">
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageViewItemHolder"
+            android:layout_width="350sp"
+            android:layout_height="200sp"
+            android:layout_gravity="center_horizontal"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textViewItemDesc"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Item holder here"
+            android:layout_gravity="center_horizontal"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30sp"
+        android:gravity="center">
+
+        <Spinner
+            android:id="@+id/itemSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30sp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/sizeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="100sp"
+            android:layout_gravity="left"
+            android:text="Size:"/>
+
+        <TextView
+            android:id="@+id/quantityTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingRight="100sp"
+            android:text="Quantity:"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30sp"
+        android:gravity="center">
+
+        <Spinner
+            android:id="@+id/sizeSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="100sp"
+            android:layout_gravity="left"/>
+
+        <Spinner
+            android:id="@+id/quantitySpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30sp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/buttonAddToCart"
+            android:layout_width="100sp"
+            android:maxWidth="100sp"
+            android:layout_height="55sp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/darkBlue"
+            android:text="Add to Cart"/>
+
+        <Button
+            android:id="@+id/buttonSeeCart"
+            android:layout_width="100sp"
+            android:maxWidth="100sp"
+            android:layout_height="55sp"
+            android:layout_gravity="left"
+            android:backgroundTint="@color/darkBlue"
+            android:text="Go to Cart"/>
+
+    </TableRow>
+
+</TableLayout>

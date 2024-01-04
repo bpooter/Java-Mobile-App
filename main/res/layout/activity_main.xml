@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="25dp">
+
+            <TextView
+                android:id="@+id/textViewWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shopWelcome"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20sp">
+
+            <TextView
+                android:id="@+id/textViewIntro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shopDetails"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20sp">
+
+            <TextView
+                android:id="@+id/textViewPrompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/continueOrLogin"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="30sp">
+
+            <Button
+                android:id="@+id/buttonLogin"
+                android:layout_width="100sp"
+                android:maxWidth="100sp"
+                android:layout_height="55sp"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/darkBlue"
+                android:text="@string/buttonLogin" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="30sp">
+
+            <Button
+                android:id="@+id/buttonGuest"
+                android:layout_width="150sp"
+                android:maxWidth="150sp"
+                android:layout_height="55sp"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/darkBlue"
+                android:text="@string/buttonGuest" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="30dp">
+
+            <TextView
+                android:id="@+id/textViewCreate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/noAccount"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewClickHere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:cursorVisible="true"
+                android:focusable="true"
+                android:text="@string/createAccount"
+                android:textColor="@color/purple"
+                android:textSize="15sp" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

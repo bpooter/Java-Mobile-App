@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LochNess">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageViewLochNess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxWidth="250sp"
+                android:layout_gravity="center"
+                android:maxHeight="250sp"
+                android:src="@drawable/lochness1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="30sp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonPrevious"
+                    android:layout_width="150sp"
+                    android:maxWidth="150sp"
+                    android:layout_height="55sp"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/darkBlue"
+                    android:text="Previous" />
+
+                <Button
+                    android:id="@+id/buttonNext"
+                    android:layout_width="150sp"
+                    android:maxWidth="150sp"
+                    android:layout_height="55sp"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/darkBlue"
+                    android:text="Next" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="30sp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/buttonNessieSound"
+                android:layout_width="150sp"
+                android:maxWidth="125sp"
+                android:layout_height="55sp"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/darkBlue"
+                android:text="Hear Nessie" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="30sp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textViewLochNess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:text="@string/nessiebio" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="30sp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/buttonNessieStore"
+                android:layout_width="100sp"
+                android:maxWidth="100sp"
+                android:layout_height="55sp"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/darkBlue"
+                android:text="Merch Store" />
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
